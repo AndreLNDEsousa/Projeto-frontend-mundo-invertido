@@ -3,3 +3,14 @@
     margin: 0px;
     padding: 0px;
 }
+/***  FONTS ***/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+
+/***  VARIABLES & THEMES ***/
+:root {
+    --primary-color: #cf0f0f;
+    --primary-color-contrast: #ffffff;
+    --field-background-color: #000;
+  }
