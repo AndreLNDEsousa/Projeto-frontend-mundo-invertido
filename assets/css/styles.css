@@ -1,25 +1,17 @@
 @charset "UTF-8";
 
-/***  ESTILOS GENÉRICOS ***/
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-    transition: 1s;
-  }
-
-/***  FONTES ***/
+/***  FONTS ***/
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 
-/***  VARIÁVEIS & TEMAS ***/
+/***  VARIABLES & THEMES ***/
 
 :root {
   --primary-color: #cf0f0f;
   --primary-color-contrast: #ffffff;
   --field-background-color: #000;
-} 
+}
 
 .light-theme {
   --page-background: linear-gradient(
@@ -45,7 +37,7 @@
     #050000 0%,
     #130404 65%,
     rgba(19, 1, 1, 0.75) 100%
-    );
+  );
   --header-background-color: #220f0f;
   --highlight-color: #ffffff;
   --featured-font-family: "Rubik Glitch", sans-serif;
@@ -56,7 +48,7 @@
   --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
   --footer-background-color: #000;
 }
- 
+
 .dark-theme button,
 .dark-theme h1,
 .dark-theme h2,
@@ -69,11 +61,21 @@
   transform: rotateZ(180deg) scaleX(-1);
 }
 
+/***  GENERIC STYLES ***/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
 body {
   background: var(--page-background);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--featured-font-family);
   font-size: 3rem;
   color: var(--primary-color);
@@ -85,7 +87,10 @@ p {
   color: var(--highlight-color);
 }
 
-p, input, textarea, label {
+p,
+input,
+textarea,
+label {
   font-family: "Libre Baskerville", serif;
 }
 
@@ -100,7 +105,6 @@ button {
   transition: background 1s;
 }
 
-/* ESTILOS DA MAIN */
 main {
   position: relative;
   display: flex;
@@ -153,7 +157,7 @@ header {
   align-items: center;
   position: relative;
 }
- 
+
 header::before {
   content: "";
   width: 100%;
@@ -172,33 +176,33 @@ header::before {
   padding: 80px 20px;
   text-align: center;
   z-index: 2;
-} 
+}
 
 .header-content img {
   width: 80%;
-} 
+}
 
 .header-content p {
   margin: 30px 0 50px;
-} 
+}
 
 .header-content button {
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
-} 
+}
 
 .header-content button:hover {
   background-color: var(--primary-color);
   color: var(--primary-color-contrast);
-} 
+}
 
-/*** PERSONAGENS DOS MUNDOS STYLES ***/
+/*** WORLD CHARACTERS STYLES ***/
 
 .world-characters {
   width: 100%;
   max-width: 900px;
   position: absolute;
-} 
+}
 
 .world-characters#top-characters {
   height: 100%;
@@ -207,19 +211,18 @@ header::before {
 
   mask: var(--character-top-image-src) bottom / contain no-repeat;
   -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
-} 
+}
 
 .world-characters#bottom-characters {
   height: 500px;
   background-color: var(--character-bottom-image-color);
   top: 3px;
   transform: rotateZ(180deg) scaleX(-1);
-  /* rotateZ para girar a imagem e scaleX para espelhar , para quando ela virar a imagem não ficar ao contrário*/
   position: relative;
 
   mask: var(--character-bottom-image-src) bottom / contain no-repeat;
   -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
-} 
+}
 
 /*** SECTIONS STYLES ***/
 
@@ -233,7 +236,7 @@ section {
 
 .container {
   max-width: 1200px;
-} 
+}
 
 #section-inverted-world {
   align-items: center;
@@ -252,7 +255,7 @@ section {
 #section-stranger-things-trailer .section-texts {
   width: 50%;
   text-align: right;
-} 
+}
 
 #section-stranger-things-trailer .section-texts h2 {
   max-width: 425px;
@@ -310,7 +313,7 @@ section {
   height: 100%;
   object-fit: cover;
   border: 10px solid var(--highlight-color);
-} 
+}
 
 /* Section 04 - Dungeons & Dragons Form */
 
@@ -386,7 +389,7 @@ section {
 
 /*** FOOTER STYLES ***/
 
-/* footer {
+footer {
   padding: 60px 0;
   background-color: var(--footer-background-color);
   text-align: center;
@@ -395,14 +398,14 @@ section {
   align-items: center;
   position: relative;
   overflow: hidden;
-} */
+}
 
-/* footer p {
+footer p {
   max-width: 700px;
   margin-bottom: 24px;
-} */
+}
 
-/* footer::before,
+footer::before,
 footer::after {
   content: "";
   width: 300px;
@@ -411,14 +414,14 @@ footer::after {
   background-size: contain;
   position: absolute;
   bottom: -30px;
-} */
+}
 
-/* footer::before {
+footer::before {
   left: -50px;
   transform: rotateZ(-10deg);
-} */
+}
 
-/* footer::after {
+footer::after {
   right: -50px;
   transform: rotateZ(10deg);
-}  */
+}
