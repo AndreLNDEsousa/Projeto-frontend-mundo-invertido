@@ -73,9 +73,7 @@ body {
   background: var(--page-background);
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: var(--featured-font-family);
   font-size: 3rem;
   color: var(--primary-color);
@@ -87,10 +85,7 @@ p {
   color: var(--highlight-color);
 }
 
-p,
-input,
-textarea,
-label {
+p, input, textarea, label {
   font-family: "Libre Baskerville", serif;
 }
 
@@ -149,7 +144,7 @@ textarea:focus-visible {
 
 /*** HEADER STYLES ***/
 
-/* header {
+header {
   background-color: var(--header-background-color);
   min-height: 850px;
   display: flex;
@@ -157,7 +152,7 @@ textarea:focus-visible {
   align-items: center;
   position: relative;
 }
-/*  
+ 
 /* header::before {
   content: "";
   width: 100%;
@@ -171,30 +166,30 @@ textarea:focus-visible {
   opacity: 0.2;
 } */ 
 
-/* .header-content {
+.header-content {
   max-width: 700px;
   padding: 80px 20px;
   text-align: center;
   z-index: 2;
-} */
+} 
 
-/* .header-content img {
+.header-content img {
   width: 80%;
-} */
+} 
 
-/* .header-content p {
+.header-content p {
   margin: 30px 0 50px;
-} */
+} 
 
-/* .header-content button {
+.header-content button {
   border: 3px solid var(--primary-color);
   color: var(--primary-color);
-} */
-/* 
+} 
+
 .header-content button:hover {
   background-color: var(--primary-color);
   color: var(--primary-color-contrast);
-} */
+} 
 
 /*** WORLD CHARACTERS STYLES ***/
 
