@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/***  GENERIC STYLES ***/
+/***  ESTILOS GENÉRICOS ***/
 
 * {
     margin: 0;
@@ -8,12 +8,12 @@
     transition: 1s;
   }
 
-/***  FONTS ***/
+/***  FONTES ***/
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"); 
 
-/***  VARIABLES & THEMES ***/
+/***  VARIÁVEIS & TEMAS ***/
 
 :root {
   --primary-color: #cf0f0f;
@@ -56,7 +56,7 @@
   --background-lamp-image: url("../images/backgrounds/lamps-inverted.png");
   --footer-background-color: #000;
 }
-/* 
+ 
 .dark-theme button,
 .dark-theme h1,
 .dark-theme h2,
