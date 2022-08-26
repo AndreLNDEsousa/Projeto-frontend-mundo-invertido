@@ -10,6 +10,7 @@ const btnSubscribe = document.getElementById('btnSubscribe')
 
 btnSubscribe.addEventListener('click', async () => {
     const subscription = {
+        
         name: txtName.value,
         email: txtEmail.value,
         level: txtLevel.value,
@@ -19,13 +20,15 @@ btnSubscribe.addEventListener('click', async () => {
     // Salvar no banco de dados
     const subscriptionId = await subscribeToHellfireClub(subscription)
 
+    //Mensagem de que foi enviado com sucesso
+    alert(`Inscrição ${subscriptionId} adicionada com sucesso!`)
+
     // Para limpar o formulário depois do envio
     txtName.value = ""
     txtEmail.value = ""
     txtLevel.value = ""
     txtCharacter.value = ""
-    //Mensagem de que foi enviado com sucesso
-    alert(`Inscrição ${subscriptionId} adicionada com sucesso!`)
+
     }
 )
 
