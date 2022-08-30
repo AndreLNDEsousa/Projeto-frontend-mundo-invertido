@@ -16,17 +16,17 @@ btnSubscribe.addEventListener('click', async () => {
     }
 
     // Salvar no banco de dados
-    subscribeToHellfireClub (subscription)
+   const subscriptionId = await subscribeToHellfireClub (subscription)
 
     //Mensagem de que foi enviado com sucesso
-    
-    alert(`Inscrição : "  ${subscriptionId}  " - Adicionada com sucesso!`)
+
+    alert (`Inscrição : "  ${subscriptionId}  " - Adicionada com sucesso!`)
 
     // Para limpar o formulário depois do envio
-    txtName.value = ""
-    txtEmail.value = ""
-    txtLevel.value = ""
-    txtCharacter.value = ""
+    txtName.value = " "
+    txtEmail.value = " "
+    txtLevel.value = " "
+    txtCharacter.value = " "
 
     }
 )
