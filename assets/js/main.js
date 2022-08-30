@@ -1,6 +1,4 @@
-
 import { subscribeToHellfireClub } from "../firebase/hellfire-club.js"
-
 
 const txtName = document.getElementById('txtName')
 const txtEmail = document.getElementById('txtEmail')
@@ -18,9 +16,10 @@ btnSubscribe.addEventListener('click', async () => {
     }
 
     // Salvar no banco de dados
-    const subscriptionId = await subscribeToHellfireClub(subscription)
+    subscribeToHellfireClub (subscription)
 
     //Mensagem de que foi enviado com sucesso
+    
     alert(`Inscrição : "  ${subscriptionId}  " - Adicionada com sucesso!`)
 
     // Para limpar o formulário depois do envio
